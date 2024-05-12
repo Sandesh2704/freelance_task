@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 0rem 10rem;
+}
+.call-icon-container{
+    display: flex;
+}
+.nav-links{
+    display: flex;
+}
+
+section {
+    position: relative;
+    padding: 3rem 14rem;
+    overflow: hidden;
+}
+
+.section-heading{
+    color: black;
+    display: flex;
+    /* flex-direction: row; */
+    font-size: 90px;
+    font-size: 5.6rem;
+    margin: 0px;
+    font-weight: 600;
+}
+span {
+    color: #677f9b;
+    padding-right: 1.5rem;
+}
+button {
+    background-color: #3e4fea;
+    padding: 1.3rem 3.4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FFF;
+    border: #3e4fea;
+    border-radius: 60px;
+    box-shadow: 0 8px 14px rgba(62, 79, 234, .17);
+}
+.more-button{
+    display: flex;
+    align-items: center;
+}
+.more-button h5{
+    font-size: 20px;
+    font-family: 900;
+    margin: 0px;
+}
+.more-button svg {
+    color: rgb(39, 50, 244);
+    margin: 0px 0px 0px 2px;
+}
+
+.more-button:hover{
+    border-bottom: 2px solid black;
+   padding: 0px 20px 2px 20px;
+}
+
+.front-section img {
+    position: absolute;
+    top: 0;
+    right: -11rem;
+}
+.hero-section {
+    margin: 40px 0px;
+}
+
+.hero-section span {
+    color: #677f9b;
+    font-size: 3.5rem;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.hero-section p {
+    color: #677f9b;
+    margin: 0px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin: 1rem 0rem 3rem 0rem;
+}
+
+.hero-section button {
+    background-color: #3e4fea;
+    padding: 1.3rem 3.4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FFF;
+    border: #3e4fea;
+    border-radius: 60px;
+    box-shadow: 0 8px 14px rgba(62, 79, 234, .17);
+}
+
+ /* blog section */
+.blog-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.blog-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.blog-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Divide width equally based on screen size */
+    gap: 2.5rem; 
+}
+.blog-card {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-card p{
+    color: #6a737d;
+    font-size: 1.2rem;
+    line-height: 28px;
+}
+.blog-heading .blog-button {
+    display: flex;
+}
+.blog-section .blog-button2 {
+    display: none;
+}
+
+/* Still in Doubt?  */
+.Doubt-section{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+.Doubt-section .section-heading{
+    margin-bottom: 2rem;
+}
+.Doudt-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #6a737d;
+    padding: 40px 10px;
+    /* gap: 5rem; */
+}
+.Doudt-content p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.Doudt-content .button2 {
+    color: white;
+    background-color: black;
+}
+
+.Doudt-content .button1 {
+    color: black;
+    background-color: white;
+}
+
+footer{
+    position: relative;
+    padding: 5rem 14rem;
+    display: flex;
+    border-top: 1px solid #d9ddff ;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+.footer ul li {
+   color: #6a737d;
+}
+.footer .footer-media{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.footer-content {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    section {
+            padding: 5rem 2rem;
+        }
+    
+        .front-section img {
+            width: 600px;
+        }
+    
+        section .section-heading {
+            font-size: 3.5rem;
+        }
+
+        .hero-section p {
+            font-size: 1rem;
+        }
+    
+        .hero-section span {
+            font-size: 3.5rem;
+            text-align: center;
+        }
+    }
+
+
+
+@media only screen and (max-width: 768px) {
+    .front-section img {
+        display: none;
+    }
+
+    section {
+        padding: 3rem 10px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .section-heading{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .blog-heading{
+        justify-content: center;
+    }
+
+    .hero-section p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .hero-section span {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .blog-content{
+        display: flex;
+      overflow-x: scroll;
+      gap: 0.9rem;
+    }
+    .blog-card{
+        width: 210px;
+    }
+    .blog-card p{
+        font-size: 1.1rem;
+        line-height: 25px;
+        padding: 0px 10px 0px 0px;
+    }
+    .blog-section .blog-button2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+     .blog-heading > .blog-button {
+        display: none;
+    }
+    
+
+    .Doudt-content{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:1rem;
+    }
+    .Doudt-content p{
+        text-align: center;
+    }
+
+    .Doubt-section .section-heading{
+        margin-bottom: 1rem;
+    }
+
+
+    footer{
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        
+    }
+    .footer img{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 30px;
+        list-style: none;
+    }
+    .footer ul li {
+        text-align: center;
+       color: #6a737d;
+        padding: 0px 0px;
+    }
+    .footer > .footer-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    .footer-content {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+    }
+}
